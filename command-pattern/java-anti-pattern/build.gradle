@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.sofka.ainative'
+version = '1.0.0'
+
+// configure Java compile compatibility
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    options.release = 11
+}
+
+repositories { mavenCentral() }
+
+application {
+    mainClass = 'com.sofka.ainative.antipattern.App'
+}
