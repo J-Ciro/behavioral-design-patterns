@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.sofka.ainative'
+version = '1.0.0'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // no external deps needed for this small example
+}
+
+application {
+    mainClass = 'com.sofka.ainative.command.App'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    options.release = 11
+}
