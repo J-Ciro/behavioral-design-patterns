@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elige Tu Propia Aventura</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#facc15", // yellow-400 from screenshot
+                        "background-light": "#f3f4f6", // gray-100
+                        "background-dark": "#1f2937", // gray-800
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#374151", // gray-700
+                        "text-light-primary": "#111827", // gray-900
+                        "text-dark-primary": "#f9fafb", // gray-50
+                        "text-light-secondary": "#4b5563", // gray-600
+                        "text-dark-secondary": "#9ca3af", // gray-400
+                    },
+                    fontFamily: {
+                        display: ["Poppins", "sans-serif"],
+                        serif: ["Cinzel", "serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem", // 12px
+                    },
+                    boxShadow: {
+                        'text-dark': '0 2px 4px rgba(0, 0, 0, 0.75)',
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light-secondary dark:text-dark-secondary">
+<div class="min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYZwQlVkmVjHWfuzOgj4rUSL8H0RpFWh1-2XVILv0FNFsyKHLWFkv0FQpt1NNoPMfrCfkN6u9xuMpiXzaDhmef3JbuOkacue8a4mjqgjIs5M3g76u_b02KFw--zGJBi_jdy_MbNfewVJxVidsM2ewqJgbfk82RIlKUy9J7yt0a9ALQpcuAfKyeX8fZXxI0HGum5pN0wVq3LBjAQcnQtCsvdMcMyTNjp_YP2B-I7P01avKoFJ6Wtsixg-lOhuN2XOA-a5CK4vk6qX0');">
+<div class="min-h-screen bg-black/50 backdrop-blur-sm flex flex-col p-4 sm:p-6 lg:p-8">
+<header class="container mx-auto max-w-7xl mb-8 flex-shrink-0">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#e3a85b] text-3xl md:text-4xl" style="text-shadow: 0 1px 3px rgba(0,0,0,0.5);">auto_stories</span>
+<h1 class="text-3xl md:text-4xl font-serif font-bold text-white" style="text-shadow: 0 2px 4px rgba(0,0,0,0.7);">Elige Tu Propia <span class="text-[#e3a85b]">Aventura</span></h1>
+</div>
+</header>
+<main class="container mx-auto max-w-3xl flex-grow flex flex-col justify-center">
+<div class="bg-gray-800/80 backdrop-blur-md p-6 sm:p-8 rounded-lg text-white space-y-6">
+<div>
+<h2 class="font-display text-2xl sm:text-3xl font-bold tracking-wide">El Despertar en la Ciénaga</h2>
+<div class="inline-block bg-gray-700/50 text-gray-300 text-sm px-3 py-1 rounded-full mt-2">Escena ID: 100</div>
+</div>
+<div class="aspect-video bg-gray-900 rounded-md overflow-hidden flex items-center justify-center">
+<img alt="Escena del despertar en la ciénaga" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwpDa2kTn6RJRYFfMXXpsJBQTXN2jgffLlTYEfW9i4AuUb0nhn_t6OluCJSyNPcnRxr_OuC9qOpzbYXaiIP35-kWoGBGoZFhJaqA7h9jZBURxZj7IAONc8-HJYuFrCucSUTInoWaqUEGLs7T9lmwQ1rolrhb0P3Gs50IU5qWKBW_Q_Wf2a-cpjOq06YN7R8GBciSAOKZ0q9ty_4h-XGU_W0JMuGs5QnVtrQ8MYAdk-Jt92AimZwUWn6_whYto1flDx4GdISPUA5aE"/>
+</div>
+<p class="text-gray-300 text-base sm:text-lg">
+                        Te despiertas sin recordar nada, rodeado por la densa niebla de un pantano. Frente a ti, hay dos caminos: uno que lleva a un antiguo puente de piedra y otro que se adentra en el bosque oscuro.
+                    </p>
+<div class="space-y-4">
+<h3 class="text-xl sm:text-2xl font-bold text-[#e3a85b]">Opciones:</h3>
+<div class="space-y-3">
+<button class="w-full flex items-center gap-4 text-left p-4 bg-gray-700/60 hover:bg-[#e3a85b] hover:text-gray-900 rounded-md transition-all duration-300 shadow-md transform hover:scale-[1.02]">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+<span class="font-medium">Cruzar el puente de piedra.</span>
+</button>
+<button class="w-full flex items-center gap-4 text-left p-4 bg-gray-700/60 hover:bg-[#e3a85b] hover:text-gray-900 rounded-md transition-all duration-300 shadow-md transform hover:scale-[1.02]">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+<span class="font-medium">Adentrarse en el bosque oscuro.</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<footer class="container mx-auto max-w-7xl text-center mt-8 flex-shrink-0">
+<div class="bg-black/30 p-4 rounded-lg backdrop-blur-sm inline-flex gap-8 justify-center">
+<button class="text-gray-300 hover:text-white transition-colors duration-200 font-semibold">Guardar</button>
+<button class="text-gray-300 hover:text-white transition-colors duration-200 font-semibold">Salir</button>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>
