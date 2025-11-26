@@ -1,8 +1,9 @@
 import React, { FC } from 'react';
 import { BookOpen } from 'lucide-react';
 import SceneDisplay from '../SceneDisplay';
-import CheckpointManager from '../CheckpointManager';
+// CheckpointManager removed from top-level to avoid duplicate save UI; using BottomSaveBar
 import CheckpointHistory from '../CheckpointHistory';
+import BottomSaveBar from '../BottomSaveBar/BottomSaveBar';
 import { useAdventure, useAuthentication } from '../../hooks';
 import { ADVENTURE_SCENES } from '../../config/adventureScenes';
 import { getFirebaseConfig } from '../../config/firebase';
@@ -69,19 +70,12 @@ const AdventureGame: FC = () => {
 
         {/* Contenido principal */}
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Columna 1-2: Escena y Guardado */}
+          {/* Columna 1-2: Escena (ahora sin duplicar el form de guardado) */}
           <div className="lg:col-span-2 space-y-6">
             <SceneDisplay
               scene={currentScene}
               isFinished={isFinished}
               onChoiceSelect={selectChoice}
-            />
-
-            <CheckpointManager
-              isFinished={isFinished}
-              checkpointCount={checkpointCount}
-              onSaveCheckpoint={handleSaveCheckpoint}
-              onReset={resetAdventure}
             />
           </div>
 
@@ -99,6 +93,8 @@ const AdventureGame: FC = () => {
           ID de Usuario: {user?.uid || 'N/A'}. La lógica de la aventura opera
           100% en el cliente, usando los patrones Memento e Iterator.
         </p>
+        {/* Bottom save bar */}
+        <BottomSaveBar onSave={handleSaveCheckpoint} />
       </div>
     </div>
   );

@@ -52,7 +52,7 @@ const SceneDisplay: FC<SceneDisplayProps> = memo(
 
         {/* Opciones */}
         <div className="space-y-4">
-          <h3 className="text-xl sm:text-2xl font-bold text-yellow-500">Opciones:</h3>
+          <h3 className="text-xl sm:text-2xl font-bold text-yellow-500">¿Qué harás ahora?</h3>
           <div className="space-y-3">
             {scene.choices.map((choice, index) => (
               <button
